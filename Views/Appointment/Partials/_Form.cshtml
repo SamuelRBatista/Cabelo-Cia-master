@@ -1,0 +1,22 @@
+﻿@model MyApp.Models.Appointment
+
+<form asp-action="Create" class="form">
+    <div class="title">Agendamento</div>
+
+    <div class="input-container ic1">
+        <input asp-for="AppointmentClient" class="input" type="text" placeholder="Nome" />
+        <span asp-validation-for="AppointmentClient" class="text-danger"></span>
+
+    </div>
+    <div class="input-container ic1">
+        <input asp-for="AppointmentDateTime" class="input" type="datetime-local" />
+        <span asp-validation-for="AppointmentDateTime" class="text-danger"></span>
+
+    </div>
+    <div class="input-container ic2">
+        <select asp-for="CategoryServiceId" asp-items="@(ViewBag.CategoryServices)" class="input"></select>
+        <span asp-validation-for="CategoryServiceId" class="text-danger"></span>
+
+    </div>
+    <button type="submit" value="Create" class="submit">Agendar</button>
+</form>

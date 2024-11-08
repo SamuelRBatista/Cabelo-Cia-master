@@ -1,0 +1,39 @@
+﻿<!-- Views/Account/Login.cshtml -->
+@model MyApp.Models.LoginViewModel
+<section class="login-fill">
+<div class="container">
+        <div class="content">
+            <div id="login">
+            <form asp-controller="Account" asp-action="Login" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                  <h1>Login</h1>
+                  <p>
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                  </p>
+
+                  <p>
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                  </p>
+
+                  <p>
+                    <label asp-for="RememberMe"></label>
+                    <input asp-for="RememberMe" />
+                  </p>
+
+                  <p>
+                    <input type="submit" value="Login" />
+                  </p>
+                @*  <p class="link">
+                    Ainda não tem conta?
+                    <a href="#paracadastro">Cadastre-se</a>
+                  </p> *@
+                </form>
+              </div>
+            </div>
+        </div>
+</div>
+</section>

@@ -1,0 +1,35 @@
+﻿<!-- Views/Account/Register.cshtml -->
+@model MyApp.Models.RegisterViewModel
+
+<section class="login-fill">
+<div class="container" >
+    <div class="content"> 
+      <!--FORMULÁRIO DE CADASTRO-->
+          <div id="cadastro">
+            <form asp-controller="Account" asp-action="Register" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <h1>Cadastro</h1>
+              <p>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+              </p>
+              <p>
+                <label asp-for="Password"></label>
+                <input asp-for="Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+              </p>           
+              <p>
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+              </p>           
+              <p> 
+                <input type="submit"  value="Cadastrar"/>                      
+              </p>
+       
+            </form>
+          </div>
+    </div>
+  </div>  
+</section>

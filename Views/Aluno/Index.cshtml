@@ -1,0 +1,34 @@
+﻿@model List<MyApp.Entities.Aluno>
+<section>
+<h1>Lista de Alunos</h1>
+
+<p>
+    <a asp-action="Create">Novo Aluno</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in Model)
+        {
+            <tr>
+                <td>@aluno.AlunoId</td>
+                <td>@aluno.Nome</td>
+                <td>@aluno.Idade</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@aluno.AlunoId">Detalhes</a> |
+                    <a asp-action="Edit" asp-route-id="@aluno.AlunoId">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@aluno.AlunoId">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</section>

@@ -1,0 +1,108 @@
+﻿@model IEnumerable<MyApp.Models.Appointment>
+<!-- Home -->
+<section id="home" class="home">
+    <div class="home-text">
+        <h1>Seu cabelo é como uma obra de arte em constante evolução</h1>
+        <div class="main-btn">
+            <a asp-controller="Appointment" asp-action="Create" class="btn">Agende um horário</a>
+        </div>
+    </div>
+    <div class="home-img">
+        <img src="~/img/home.png">
+    </div>
+</section>
+
+<!-- Sobre -->
+<section id="about" class="about">
+
+    <div class="home-img">
+        <img src="~/img/home.png">
+    </div>
+
+    <div class="about-text">
+
+        <h1>Sobre nós</h1>
+        <p>
+            Com um compromisso apaixonado pela expressão individual, a marca oferece
+            produtos e serviços que celebram a beleza natural de todos os tipos de cabelo.
+        </p>
+        <p>
+            Desde cortes modernos até tratamentos personalizados, Cabelo&Cia destaca-se como um espaço
+            acolhedor que promove a autoexpressão e a aceitação.
+        </p>
+        <p>
+            Com uma abordagem inclusiva e respeitosa, a marca redefine os padrões de beleza, inspirando confiança
+            e empoderamento para todos os seus clientes, independentemente de sua identidade de gênero.
+        </p>
+
+    </div>
+
+</section>
+<!-- End -->
+<!-- Serviços -->
+<section id="services" class="service">
+
+    <div class="service-text">
+
+        <h1>Serviços</h1>
+
+        <div class="all-products">
+
+            <div class="product">
+                <img src="~/img/img5.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Cortes</h4>
+                    <p class="product-price">$129</p>
+                    <a class="product-btn" asp-controller="Appointment" asp-action="Create">Agende um horário</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="~/img/img6.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Cor</h4>
+                    <p class="product-price">$129</p>
+                    <a class="product-btn" asp-controller="Appointment" asp-action="Create">Agende um horário</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="~/img/img5.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Penteados</h4>
+                    <p class="product-price">$129</p>
+                    <a class="product-btn" href="#">Agende um horário</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="~/img/img6.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Tratamento</h4>
+                    <p class="product-price">$129</p>
+                    <a class="product-btn" asp-controller="Appointment" asp-action="Create">Agende um horário</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End -->
+
+<!-- Vitrine -->
+<section id="gallery" class="vitrine">
+    <div class="vitrine-text">
+        <h1>Galeria</h1>
+        <div class="img-gallery">
+            <img src="~/img/img1.jpg">
+            <img src="~/img/img1.jpg">
+            <img src="~/img/img1.jpg">
+            <img src="~/img/img1.jpg">
+            <img src="~/img/img1.jpg">
+            <img src="~/img/img1.jpg">
+        </div>
+    </div>
+</section>
+<!-- End -->
+
